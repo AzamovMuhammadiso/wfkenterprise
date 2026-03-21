@@ -88,7 +88,7 @@ export default function Contact() {
             <ContactInfoCard
               icon={<Mail className="w-8 h-8" />}
               title="Email"
-              content="info@dmwtrans.com"
+              content="info@wfkenterprise.com"
               delay="600"
               isVisible={isVisible}
             />

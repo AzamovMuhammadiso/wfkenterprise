@@ -19,8 +19,8 @@ export default function Footer() {
             </div>
             <div>
               <span className="text-2xl font-bold">
-                <span className="text-gray-800">DM</span>
-                <span className="text-blue-500">WORLD</span>
+                <span className="text-gray-800">WFK</span>
+                <span className="text-blue-500">ENTERPRISE</span>
               </span>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center text-gray-600 text-sm">
                 <Mail className="w-4 h-4 mr-2 text-blue-500" />
-                <span>info@dmwtrans.com</span>
+                <span>info@wfkenterprise.com</span>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center text-sm text-gray-500 pt-8 border-t">
-          © 2025 DM World Transportation
+          © 2025 WFK ENTERPRISE Transportation
         </div>
       </div>
     </footer>
