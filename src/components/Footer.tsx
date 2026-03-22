@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center text-sm text-gray-500 pt-8 border-t">
-          © 2025 WFK ENTERPRISE Transportation
+          © 2025 WFK ENTERPRISE LLC
         </div>
       </div>
     </footer>
