@@ -11,6 +11,7 @@ import { useRef } from "react";
 import truckBG from "../assets/image/truck.png";
 import drivers from "../assets/image/drivers.png";
 import truckexpreince from "../assets/image/truckexpreince.png";
+import trucks from "../assets/image/trucks.png";
 
 // Scroll-triggered animation component
 function ScrollReveal({
@@ -122,9 +123,10 @@ export default function Home() {
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
-              <TruckIcon
-                className="w-full h-64 text-gray-300"
-                strokeWidth={0.5}
+              <img
+                src={trucks}
+                alt="Trucks"
+                className="w-full h-64 object-cover"
               />
             </ScrollReveal>
           </div>
@@ -205,10 +207,7 @@ export default function Home() {
               src="https://images.pexels.com/photos/6169639/pexels-photo-6169639.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Truck 5"
             />
-            <GalleryImage
-              src={truckexpreince}
-              alt="Truck 6"
-            />
+            <GalleryImage src={truckexpreince} alt="Truck 6" />
             <GalleryImage
               src="https://images.pexels.com/photos/6169649/pexels-photo-6169649.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Truck 7"
@@ -237,7 +236,7 @@ export default function Home() {
                   src={drivers}
                   alt="Career"
                   className="rounded-lg shadow-lg"
-                  />
+                />
               </ScrollReveal>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
