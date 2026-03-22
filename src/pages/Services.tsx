@@ -2,6 +2,10 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Truck as TruckIcon } from "lucide-react";
+import truckexpreince from "../assets/image/truckexpreince.png";
+import mantruck from "../assets/image/mantruck.png";
+
+
 
 // Scroll-triggered animation component
 function ScrollReveal({
@@ -121,7 +125,7 @@ export default function Services() {
             <ValueCard
               title="Trust"
               description="We understand that in every way our customers are entrusting us much like we see to their drivers at every turn. We know we are trusted and we value that trust because we know it is why we trade with our customers. Our approach, as we got back in time, is really that simple."
-              image="https://images.pexels.com/photos/6169659/pexels-photo-6169659.jpeg?auto=compress&cs=tinysrgb&w=800"
+              image={mantruck}
               delay={0.2}
             />
             <ValueCard
@@ -133,7 +137,7 @@ export default function Services() {
             <ValueCard
               title="Experience"
               description="Our organization has brought in over success in transportation does not come overnight. It grows through experience. We have and pursue that learned and at each of our service channels, and embed these standards while every employee is truly in the finest traditions we have built year after year."
-              image="https://images.pexels.com/photos/6169654/pexels-photo-6169654.jpeg?auto=compress&cs=tinysrgb&w=800"
+              image={truckexpreince}
               delay={0.6}
             />
           </div>

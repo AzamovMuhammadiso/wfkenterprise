@@ -315,7 +315,7 @@ export default function Quote() {
             <p className="text-gray-600">
               Need immediate assistance?{' '}
               <a href="tel:6304720000" className="text-blue-500 hover:text-blue-600 font-semibold">
-                Call us at (630) 472-0000
+                Call us at (440) 266-7901
               </a>
             </p>
           </div>

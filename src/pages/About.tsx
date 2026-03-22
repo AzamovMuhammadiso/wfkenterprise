@@ -2,6 +2,9 @@ import { useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import mansur from "../assets/image/mansur.jpg";
+import john from "../assets/image/john.png";
+import sara from "../assets/image/sara.png";
 
 // Scroll-triggered animation component
 function ScrollReveal({
@@ -36,8 +39,21 @@ export default function About() {
     {
       name: "Mansur",
       role: "Fleet Department",
-      image:
-        "https://images.pexels.com/photos/1490844/pexels-photo-1490844.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: `${mansur}`,
+      quote:
+        "I love working here. My employees are great to work with and are always on your side. I feel like I'm a very valued employee here and what I do really matters to DM World. Very friendly environment. I love it here!",
+    },
+    {
+      name: "John",
+      role: "Fleet Department",
+      image: `${john}`,
+      quote:
+        "I love working here. My employees are great to work with and are always on your side. I feel like I'm a very valued employee here and what I do really matters to DM World. Very friendly environment. I love it here!",
+    },
+    {
+      name: "Sara",
+      role: "Fleet Department",
+      image: `${sara}`,
       quote:
         "I love working here. My employees are great to work with and are always on your side. I feel like I'm a very valued employee here and what I do really matters to DM World. Very friendly environment. I love it here!",
     },

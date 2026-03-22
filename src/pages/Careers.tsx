@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import carrer from "../assets/image/carrer.png";
+
 
 export default function Careers() {
   const [isVisible, setIsVisible] = useState(false);
@@ -66,7 +68,7 @@ export default function Careers() {
               isVisible={isVisible}
             />
             <CareerCard
-              image="https://images.pexels.com/photos/5561924/pexels-photo-5561924.jpeg?auto=compress&cs=tinysrgb&w=800"
+              image={carrer}
               delay="600"
               isVisible={isVisible}
             />

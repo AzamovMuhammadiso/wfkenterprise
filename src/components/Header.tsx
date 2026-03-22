@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import logo from "../assets/image/logo.png";
 
 export default function Header() {
   const location = useLocation();
@@ -24,21 +25,15 @@ export default function Header() {
           <Link to="/" className="flex items-center" onClick={closeMenu}>
             <div className="flex items-center space-x-2">
               <div className="relative w-12 h-12">
-                <svg viewBox="0 0 100 100" className="w-full h-full">
-                  <circle cx="50" cy="50" r="45" fill="#5B9BD5" opacity="0.2" />
-                  <path d="M30 50 Q50 30 70 50 Q50 70 30 50" fill="#5B9BD5" />
-                  <path d="M25 45 L25 55 L35 55 L35 45 Z" fill="#5B9BD5" />
-                  <path d="M40 40 L40 60 L45 60 L45 40 Z" fill="#5B9BD5" />
-                  <path d="M50 35 L50 65 L55 65 L55 35 Z" fill="#5B9BD5" />
-                  <polygon
-                    points="65,25 75,35 70,35 70,55 60,55 60,35 55,35"
-                    fill="#2B5797"
-                  />
-                </svg>
+                <img
+                  src={logo}
+                  alt="WFK Enterprise Logo"
+                  className="w-full h-full"
+                />
               </div>
               <div>
                 <span className="text-2xl font-bold">
-                  <span className="text-gray-800">WFK</span>
+                  <span className="text-gray-800">WFK </span>
                   <span className="text-blue-500">ENTERPRISE</span>
                 </span>
               </div>

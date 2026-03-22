@@ -8,6 +8,9 @@ import {
 } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import truckBG from "../assets/image/truck.png";
+import drivers from "../assets/image/drivers.png";
+import truckexpreince from "../assets/image/truckexpreince.png";
 
 // Scroll-triggered animation component
 function ScrollReveal({
@@ -39,14 +42,12 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0">
           <ScrollReveal>
-            <svg className="w-full h-full" viewBox="0 0 800 600">
-              <path
-                d="M100 300 L150 280 L150 250 L200 250 L200 280 L250 280 L250 200 L400 200 L400 280 L700 280 L700 320 L400 320 L400 400 L250 400 L250 320 L200 320 L200 350 L150 350 L150 320 L100 340 Z"
-                fill="currentColor"
-              />
-            </svg>
+            <div
+              className="absolute inset-0 opacity-40 bg-no-repeat bg-center bg-cover"
+              style={{ backgroundImage: `url(${truckBG})` }}
+            />
           </ScrollReveal>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
@@ -58,12 +59,12 @@ export default function Home() {
                 </h1>
               </div>
             </ScrollReveal>
-            <ScrollReveal delay={0.2}>
+            {/* <ScrollReveal delay={0.2}>
               <TruckIcon
                 className="w-full h-64 text-blue-300 opacity-50"
                 strokeWidth={0.5}
               />
-            </ScrollReveal>
+            </ScrollReveal> */}
           </div>
         </div>
       </section>
@@ -205,7 +206,7 @@ export default function Home() {
               alt="Truck 5"
             />
             <GalleryImage
-              src="https://images.pexels.com/photos/6169654/pexels-photo-6169654.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={truckexpreince}
               alt="Truck 6"
             />
             <GalleryImage
@@ -233,10 +234,10 @@ export default function Home() {
               </div>
               <ScrollReveal delay={0.2}>
                 <img
-                  src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src={drivers}
                   alt="Career"
                   className="rounded-lg shadow-lg"
-                />
+                  />
               </ScrollReveal>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>

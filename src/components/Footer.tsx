@@ -1,5 +1,13 @@
-import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
+import { Link } from "react-router-dom";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -14,7 +22,10 @@ export default function Footer() {
                 <path d="M25 45 L25 55 L35 55 L35 45 Z" fill="#5B9BD5" />
                 <path d="M40 40 L40 60 L45 60 L45 40 Z" fill="#5B9BD5" />
                 <path d="M50 35 L50 65 L55 65 L55 35 Z" fill="#5B9BD5" />
-                <polygon points="65,25 75,35 70,35 70,55 60,55 60,35 55,35" fill="#2B5797" />
+                <polygon
+                  points="65,25 75,35 70,35 70,55 60,55 60,35 55,35"
+                  fill="#2B5797"
+                />
               </svg>
             </div>
             <div>
@@ -27,77 +38,56 @@ export default function Footer() {
         </div>
 
         <nav className="flex justify-center space-x-8 mb-12">
-          <Link to="/about" className="text-gray-600 hover:text-blue-500 transition-colors text-sm">
+          <Link
+            to="/about"
+            className="text-gray-600 hover:text-blue-500 transition-colors text-sm"
+          >
             About Us
           </Link>
-          <Link to="/services" className="text-gray-600 hover:text-blue-500 transition-colors text-sm">
+          <Link
+            to="/services"
+            className="text-gray-600 hover:text-blue-500 transition-colors text-sm"
+          >
             Services Offered
           </Link>
-          <Link to="/news" className="text-gray-600 hover:text-blue-500 transition-colors text-sm">
+          <Link
+            to="/news"
+            className="text-gray-600 hover:text-blue-500 transition-colors text-sm"
+          >
             News
           </Link>
-          <Link to="/careers" className="text-gray-600 hover:text-blue-500 transition-colors text-sm">
+          <Link
+            to="/careers"
+            className="text-gray-600 hover:text-blue-500 transition-colors text-sm"
+          >
             See Openings
           </Link>
-          <Link to="/contact" className="text-gray-600 hover:text-blue-500 transition-colors text-sm">
+          <Link
+            to="/contact"
+            className="text-gray-600 hover:text-blue-500 transition-colors text-sm"
+          >
             Contact Us
           </Link>
         </nav>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
-            <h3 className="text-sm font-semibold text-gray-800 mb-4">Company Information</h3>
+            <h3 className="text-sm font-semibold text-gray-800 mb-4">
+              Company Information
+            </h3>
             <div className="space-y-3">
               <div className="flex items-center text-gray-600 text-sm">
                 <MapPin className="w-4 h-4 mr-2 text-blue-500" />
-                <span>361 W Army Trail Blvd, Addison, IL 60101</span>
+                <span>30505 Bainbridge Rd Suite 101 Solon, OH 44139</span>
               </div>
               <div className="flex items-center text-gray-600 text-sm">
                 <Phone className="w-4 h-4 mr-2 text-blue-500" />
-                <span>(630) 472-0000</span>
+                <span>(440)266-7901</span>
               </div>
               <div className="flex items-center text-gray-600 text-sm">
                 <Mail className="w-4 h-4 mr-2 text-blue-500" />
                 <span>info@wfkenterprise.com</span>
               </div>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold text-gray-800 mb-4">Social Media</h3>
-            <div className="flex space-x-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-500 transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-400 transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-pink-500 transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-700 transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
             </div>
           </div>
         </div>
