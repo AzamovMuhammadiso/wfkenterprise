@@ -15,8 +15,6 @@ import truckexpreince from "../assets/image/truckexpreince.png";
 import trucks from "../assets/image/trucks.png";
 import truckimg1 from "../assets/image/truckimg1.png";
 import truckimg2 from "../assets/image/truckimg2.png";
-import truckimg3 from "../assets/image/truckimg3.png";
-import truckimg4 from "../assets/image/truckimg4.png";
 import truckimg5 from "../assets/image/truckimg5.png";
 import truckimg6 from "../assets/image/truckimg6.png";
 import truckimg7 from "../assets/image/truckimg7.png";

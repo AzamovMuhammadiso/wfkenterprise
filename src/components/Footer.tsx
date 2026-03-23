@@ -1,9 +1,5 @@
 import { Link } from "react-router-dom";
 import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
   MapPin,
   Phone,
   Mail,

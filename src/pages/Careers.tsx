@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import carrer from "../assets/image/carrer.png";
 import turckBg from "../assets/image/truck.png";
 import drivers from "../assets/image/dirvers.png";
 import driver1 from "../assets/image/driver1.png";
