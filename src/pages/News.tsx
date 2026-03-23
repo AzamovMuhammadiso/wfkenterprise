@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 
+import trucks from "../assets/image/trucks.png";
+
+
 export default function News() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -76,7 +79,7 @@ export default function News() {
           <article className={`bg-white rounded-lg shadow-lg p-8 transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="mb-6">
               <img
-                src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src={trucks}
                 alt="SmartWay"
                 className="w-64 h-auto"
               />
@@ -91,7 +94,7 @@ export default function News() {
                 <p className="text-gray-700 mb-2">For Immediate Release</p>
                 <p className="text-gray-700 mb-4">11.19.2019</p>
                 <p className="text-gray-700 mb-2">
-                  DM World Transportation <strong>Joins U.S. EPA SmartWay® Transport Partnership</strong>
+                  WFK ENTERPRISE LLC <strong>Joins U.S. EPA SmartWay® Transport Partnership</strong>
                 </p>
               </div>
               <div className="text-right">
@@ -102,7 +105,7 @@ export default function News() {
 
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                <strong>[Orlando, Florida]</strong> – DM World Transportation LLC today announced
+                <strong>[Orlando, Florida]</strong> – WFK ENTERPRISE LLC today announced
                 that it joined the SmartWay® Transport Partnership, an innovative collaboration
                 between U.S. Environmental Protection Agency (EPA) and industry that provides a
                 framework to assess the environmental and energy efficiency of goods movement
@@ -110,18 +113,18 @@ export default function News() {
               </p>
 
               <p>
-                <strong>DM World Transportation</strong> will contribute to the Partnership's
+                <strong>WFK ENTERPRISE LLC</strong> will contribute to the Partnership's
                 savings of 279.7 million barrels of oil, $37.5 billion in fuel costs and 134
                 million tons of air pollutants. This is equivalent to eliminating annual energy
                 use in over 18.2 million homes. By joining SmartWay Transport Partnership,{' '}
-                <strong>DM World Transportation</strong> demonstrates its strong commitment to
+                <strong>WFK ENTERPRISE LLC</strong> demonstrates its strong commitment to
                 environmental stewardship and corporate social responsibility.
               </p>
 
               <p>
                 It is our goal to focus on providing the best service possible by creating long
                 lasting and respectful relationships with our customers. Our mission statement{' '}
-                <em>"Improving our world, one mile at a time"</em> reaffirms that DM World
+                <em>"Improving our world, one mile at a time"</em> reaffirms that WFK ENTERPRISE
                 Transportation is looking forward to helping achieve our goals as a responsible
                 carrier and is in line with EPA priorities.
               </p>

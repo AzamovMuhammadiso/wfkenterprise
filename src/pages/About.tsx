@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import mansur from "../assets/image/mansur.jpg";
 import john from "../assets/image/john.png";
 import sara from "../assets/image/sara.png";
+import turckBg from "../assets/image/truck.png";
 
 // Scroll-triggered animation component
 function ScrollReveal({
@@ -41,21 +42,21 @@ export default function About() {
       role: "Fleet Department",
       image: `${mansur}`,
       quote:
-        "I love working here. My employees are great to work with and are always on your side. I feel like I'm a very valued employee here and what I do really matters to DM World. Very friendly environment. I love it here!",
+        "I love working here. My employees are great to work with and are always on your side. I feel like I'm a very valued employee here and what I do really matters to WFK ENTERPRISE. Very friendly environment. I love it here!",
     },
     {
       name: "John",
       role: "Fleet Department",
       image: `${john}`,
       quote:
-        "I love working here. My employees are great to work with and are always on your side. I feel like I'm a very valued employee here and what I do really matters to DM World. Very friendly environment. I love it here!",
+        "I love working here. My employees are great to work with and are always on your side. I feel like I'm a very valued employee here and what I do really matters to WFK ENTERPRISE. Very friendly environment. I love it here!",
     },
     {
       name: "Sara",
       role: "Fleet Department",
       image: `${sara}`,
       quote:
-        "I love working here. My employees are great to work with and are always on your side. I feel like I'm a very valued employee here and what I do really matters to DM World. Very friendly environment. I love it here!",
+        "I love working here. My employees are great to work with and are always on your side. I feel like I'm a very valued employee here and what I do really matters to WFK ENTERPRISE. Very friendly environment. I love it here!",
     },
   ];
 
@@ -119,8 +120,8 @@ export default function About() {
     <div className="min-h-screen">
       <section className="relative h-80 overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          alt="DM World Truck"
+          src={turckBg}
+          alt="WFK ENTERPRISE Truck"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent">
@@ -158,7 +159,7 @@ export default function About() {
                 <p>
                   In 2008, Charles founded his first trucking company,
                   specializing in loading and unloading airplanes at O'Hare
-                  Airport in Chicago and in 2022 Charles acquired DM World
+                  Airport in Chicago and in 2022 Charles acquired WFK ENTERPRISE
                   Transportation LLC. With his extensive experience and
                   knowledge, Charles is now focused on growing the business and
                   better transportation services through his company.

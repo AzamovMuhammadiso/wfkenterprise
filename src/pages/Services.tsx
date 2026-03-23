@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 import { Truck as TruckIcon } from "lucide-react";
 import truckexpreince from "../assets/image/truckexpreince.png";
 import mantruck from "../assets/image/mantruck.png";
-
+import turckBg from "../assets/image/truck.png";
+import drivers from "../assets/image/drivers.png";
+import truckimg1 from "../assets/image/truckimg1.png";
+import truckimg2 from "../assets/image/truckimg2.png";
 
 
 // Scroll-triggered animation component
@@ -38,8 +41,8 @@ export default function Services() {
     <div className="min-h-screen">
       <section className="relative h-80 overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          alt="DM World Truck"
+          src={turckBg}
+          alt="WFK ENTERPRISE Truck"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent">
@@ -59,7 +62,7 @@ export default function Services() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-4xl font-bold text-gray-900">Transportation</h2>
+            <h2 className="text-4xl font-bold text-gray-900">LLC</h2>
             <Link
               to="/services"
               className="text-blue-600 hover:text-blue-700 font-medium"
@@ -71,7 +74,7 @@ export default function Services() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
               <img
-                src="https://images.pexels.com/photos/6169659/pexels-photo-6169659.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src={truckimg2}
                 alt="Fleet of trucks"
                 className="w-full rounded-lg shadow-xl"
               />
@@ -80,11 +83,11 @@ export default function Services() {
             <ScrollReveal delay={0.2} className="space-y-8">
               <ServiceDetail
                 title="FTL"
-                description="DM World provides a Full Truck Load Carrier service in the US across 48 States and 10+ City Metropolitan Areas. We operate a fleet of over 100+ Dry Van Trailers."
+                description="WFK ENTERPRISE provides a Full Truck Load Carrier service in the US across 48 States and 10+ City Metropolitan Areas. We operate a fleet of over 100+ Dry Van Trailers."
               />
               <ServiceDetail
                 title="OTR"
-                description="DM World provides fleet services as continental USA freight forwarding. We work in all 48 states of America."
+                description="WFK ENTERPRISE provides fleet services as continental USA freight forwarding. We work in all 48 states of America."
               />
               <ServiceDetail
                 title="Team Expedited"
@@ -92,7 +95,7 @@ export default function Services() {
               />
               <ServiceDetail
                 title="Drop and Hook"
-                description="DM World provides ready-to-move cargo with round-the-clock availability. We can provide trailer pools for shippers all across the US."
+                description="WFK ENTERPRISE provides ready-to-move cargo with round-the-clock availability. We can provide trailer pools for shippers all across the US."
               />
               <ServiceDetail
                 title="EDI Capable"
@@ -107,8 +110,8 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <img
-              src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt="DM World Truck"
+              src={truckimg1}
+              alt="WFK ENTERPRISE Truck"
               className="w-full rounded-lg shadow-2xl"
             />
           </ScrollReveal>
@@ -130,8 +133,8 @@ export default function Services() {
             />
             <ValueCard
               title="Reliability"
-              description="Becoming a reliable company is the backbone of everything we do at DM World. We understand how much depends on us carrying out on our promises. We are satisfied with nothing provides that we cannot keep. We rely heavily on our reputation and we intend never to tarnish or destroy it in fashion."
-              image="https://images.pexels.com/photos/6169662/pexels-photo-6169662.jpeg?auto=compress&cs=tinysrgb&w=800"
+              description="Becoming a reliable company is the backbone of everything we do at WFK ENTERPRISE. We understand how much depends on us carrying out on our promises. We are satisfied with nothing provides that we cannot keep. We rely heavily on our reputation and we intend never to tarnish or destroy it in fashion."
+              image={drivers}
               delay={0.4}
             />
             <ValueCard

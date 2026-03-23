@@ -10,8 +10,18 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import truckBG from "../assets/image/truck.png";
 import drivers from "../assets/image/drivers.png";
+import drivers2 from "../assets/image/dirvers.png";
 import truckexpreince from "../assets/image/truckexpreince.png";
 import trucks from "../assets/image/trucks.png";
+import truckimg1 from "../assets/image/truckimg1.png";
+import truckimg2 from "../assets/image/truckimg2.png";
+import truckimg3 from "../assets/image/truckimg3.png";
+import truckimg4 from "../assets/image/truckimg4.png";
+import truckimg5 from "../assets/image/truckimg5.png";
+import truckimg6 from "../assets/image/truckimg6.png";
+import truckimg7 from "../assets/image/truckimg7.png";
+import fleet from "../assets/image/fleet.png";
+import support from "../assets/image/support.png";
 
 // Scroll-triggered animation component
 function ScrollReveal({
@@ -75,7 +85,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                At WFK World
+                At WFK ENTERPRISE
               </h2>
               <p className="text-gray-600 mb-6">
                 Every mile counts, every delivery counts, and every one of our
@@ -145,25 +155,25 @@ export default function Home() {
             <FeatureCard
               icon={<Users className="w-12 h-12" />}
               title="Experienced Specialists"
-              image="https://images.pexels.com/photos/7363181/pexels-photo-7363181.jpeg?auto=compress&cs=tinysrgb&w=800"
+              image={truckimg2}
               delay={0.2}
             />
             <FeatureCard
               icon={<Clock className="w-12 h-12" />}
               title="Delivery Anytime"
-              image="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=800"
+              image={drivers2}
               delay={0.4}
             />
             <FeatureCard
               icon={<BarChart3 className="w-12 h-12" />}
               title="Easy Order Management"
-              image="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800"
+              image={fleet}
               delay={0.6}
             />
             <FeatureCard
               icon={<HeadphonesIcon className="w-12 h-12" />}
               title="24/7 Customer Support"
-              image="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800"
+              image={support}
               delay={0.8}
             />
           </div>
@@ -187,29 +197,29 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <GalleryImage
-              src="https://images.pexels.com/photos/6169659/pexels-photo-6169659.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={truckimg2}
               alt="Truck 1"
               className="col-span-2 row-span-2"
             />
             <GalleryImage
-              src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={truckimg1}
               alt="Truck 2"
             />
             <GalleryImage
-              src="https://images.pexels.com/photos/6169662/pexels-photo-6169662.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={truckimg5}
               alt="Truck 3"
             />
             <GalleryImage
-              src="https://images.pexels.com/photos/6169677/pexels-photo-6169677.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={truckimg6}
               alt="Truck 4"
             />
             <GalleryImage
-              src="https://images.pexels.com/photos/6169639/pexels-photo-6169639.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={truckimg7}
               alt="Truck 5"
             />
             <GalleryImage src={truckexpreince} alt="Truck 6" />
             <GalleryImage
-              src="https://images.pexels.com/photos/6169649/pexels-photo-6169649.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={truckimg5}
               alt="Truck 7"
             />
           </div>
