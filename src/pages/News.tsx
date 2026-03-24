@@ -144,7 +144,7 @@ export default function News() {
 
               <p>
                 Becoming a reliable and environmentally sensitive carrier is the backbone of
-                everything we do at DM. As a carrier we rely on our reputation to provide quality
+                everything we do at WFK. As a carrier we rely on our reputation to provide quality
                 service in the most efficient way. For information about the SmartWay Transport
                 Partnership visit www.epa.gov/smartway.
               </p>

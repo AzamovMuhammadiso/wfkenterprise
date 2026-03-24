@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import turckBg from "../assets/image/truck.png";
 import drivers from "../assets/image/dirvers.png";
 import driver1 from "../assets/image/driver1.png";
@@ -123,17 +124,17 @@ export default function Careers() {
             </p>
             <div className="flex justify-center space-x-4">
               <a
-                href="mailto:careers@dmwtrans.com"
+                href="mailto:info@wfkenterprise.com"
                 className="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold"
               >
                 Apply Now
               </a>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-semibold"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
