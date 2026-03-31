@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <nav className="flex justify-center space-x-8 mb-12">
+        <nav className="flex flex-wrap justify-center gap-4 mb-12">
           <Link
             to="/about"
             className="text-gray-600 hover:text-blue-500 transition-colors text-sm"

@@ -124,7 +124,7 @@ export default function Careers() {
             </p>
             <div className="flex justify-center space-x-4">
               <a
-                href="mailto:info@wfkenterprise.com"
+                href="http://www.mydriverfiles.com/wfk-enterprise-llc/apply/"
                 className="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold"
               >
                 Apply Now
