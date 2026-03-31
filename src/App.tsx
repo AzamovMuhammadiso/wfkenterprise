@@ -9,6 +9,7 @@ import News from "./pages/News";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import Quote from "./pages/Quote";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/quote" element={<Quote />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </main>
       <Footer />
