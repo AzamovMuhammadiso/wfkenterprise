@@ -10,6 +10,7 @@ import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import Quote from "./pages/Quote";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import SMSTerms from "./pages/SMSTerms";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/quote" element={<Quote />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/sms-terms" element={<SMSTerms />} />
         </Routes>
       </main>
       <Footer />

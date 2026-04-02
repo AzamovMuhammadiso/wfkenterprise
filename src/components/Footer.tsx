@@ -61,6 +61,12 @@ export default function Footer() {
           >
             Privacy Policy
           </Link>
+          <Link
+            to="/sms-terms"
+            className="text-gray-600 hover:text-blue-500 transition-colors text-sm"
+          >
+            SMS Terms
+          </Link>
         </nav>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
