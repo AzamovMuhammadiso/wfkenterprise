@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function SMSTerms() {
   return (
     <div className="min-h-screen bg-white py-16">
@@ -58,13 +60,9 @@ export default function SMSTerms() {
               Policy:
             </p>
             <p className="mt-2 text-blue-600 hover:underline">
-              <a
-                href="https://www.wfkenterprise.com/privacy-policy"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <Link to="/privacy-policy" className="hover:underline">
                 https://www.wfkenterprise.com/privacy-policy
-              </a>
+              </Link>
             </p>
           </div>
 
