@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { MapPin, Phone, Mail, Send } from "lucide-react";
 import { supabase } from "../lib/supabase";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,6 +16,8 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
   >("idle");
+  const [submitError, setSubmitError] = useState("");
+  const [smsConsent, setSmsConsent] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -24,6 +27,16 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus("idle");
+    setSubmitError("");
+
+    if (!smsConsent) {
+      setSubmitStatus("error");
+      setSubmitError(
+        "Please agree to receive SMS messages from WFK Enterprise, LLC before submitting the form.",
+      );
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       const { error } = await supabase.from("contact_submissions").insert([
@@ -57,6 +70,10 @@ export default function Contact() {
       ...prev,
       [e.target.name]: e.target.value,
     }));
+  };
+
+  const handleSmsConsentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSmsConsent(e.target.checked);
   };
 
   return (
@@ -120,7 +137,8 @@ Solon, OH 44139"
             {submitStatus === "error" && (
               <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
                 <p className="text-red-800">
-                  There was an error submitting your message. Please try again.
+                  {submitError ||
+                    "There was an error submitting your message. Please try again."}
                 </p>
               </div>
             )}
@@ -205,6 +223,23 @@ Solon, OH 44139"
                 </div>
               </div>
 
+              <div className="flex items-start space-x-3">
+                <input
+                  id="smsConsent"
+                  name="smsConsent"
+                  type="checkbox"
+                  checked={smsConsent}
+                  onChange={handleSmsConsentChange}
+                  required
+                  className="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                />
+                <label htmlFor="smsConsent" className="text-sm text-gray-700">
+                  I agree to receive SMS messages from WFK Enterprise, LLC.
+                  Message frequency may vary. Message and data rates may apply.
+                  Reply STOP to opt out, HELP for help.
+                </label>
+              </div>
+
               <div>
                 <label
                   htmlFor="message"
@@ -231,6 +266,20 @@ Solon, OH 44139"
                 <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
                 <Send className="w-5 h-5" />
               </button>
+              <p className="mt-4 text-center text-sm text-gray-500">
+                By submitting this form, you agree to our{" "}
+                <Link
+                  to="/privacy-policy"
+                  className="text-blue-600 hover:underline"
+                >
+                  Privacy Policy
+                </Link>{" "}
+                and{" "}
+                <Link to="/sms-terms" className="text-blue-600 hover:underline">
+                  SMS Terms & Conditions
+                </Link>
+                .
+              </p>
             </form>
           </div>
         </div>
