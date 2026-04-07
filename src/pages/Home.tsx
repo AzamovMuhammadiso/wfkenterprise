@@ -18,6 +18,7 @@ import truckimg2 from "../assets/image/truckimg2.png";
 import truckimg5 from "../assets/image/truckimg5.png";
 import truckimg6 from "../assets/image/truckimg6.png";
 import truckimg7 from "../assets/image/truckimg7.png";
+import newtruck from "../assets/image/newtruck.png";
 import fleet from "../assets/image/fleet.png";
 import support from "../assets/image/support.png";
 
@@ -159,7 +160,7 @@ export default function Home() {
             <FeatureCard
               icon={<Clock className="w-12 h-12" />}
               title="Delivery Anytime"
-              image={drivers2}
+              image={newtruck}
               delay={0.4}
             />
             <FeatureCard
