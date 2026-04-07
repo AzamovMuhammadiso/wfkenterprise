@@ -275,7 +275,10 @@ Solon, OH 44139"
                   Privacy Policy
                 </Link>{" "}
                 and{" "}
-                <Link to="/sms-terms" className="text-blue-600 hover:underline">
+                <Link
+                  to="/sms-terms"
+                  className="text-blue-600 hover:underline"
+                >
                   SMS Terms & Conditions
                 </Link>
                 .

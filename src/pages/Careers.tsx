@@ -1,14 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import turckBg from "../assets/image/truck.png";
-import drivers from "../assets/image/dirvers.png";
-import driver1 from "../assets/image/driver1.png";
-import driver2 from "../assets/image/driver2.png";
-import driver3 from "../assets/image/driver3.png";
 
 export default function Careers() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState<"drivers" | "office">("drivers");
 
   useEffect(() => {
     setIsVisible(true);
@@ -37,42 +32,7 @@ export default function Careers() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex space-x-8 mb-12 border-b-2 border-gray-200">
-            <button
-              onClick={() => setActiveTab("drivers")}
-              className={`text-xl font-semibold pb-4 transition-all ${
-                activeTab === "drivers"
-                  ? "text-blue-600 border-b-4 border-blue-600 -mb-0.5"
-                  : "text-gray-600 hover:text-blue-600"
-              }`}
-            >
-              Drivers
-            </button>
-            <button
-              onClick={() => setActiveTab("office")}
-              className={`text-xl font-semibold pb-4 transition-all ${
-                activeTab === "office"
-                  ? "text-blue-600 border-b-4 border-blue-600 -mb-0.5"
-                  : "text-gray-600 hover:text-blue-600"
-              }`}
-            >
-              Office
-            </button>
-          </div>
-
-          <div
-            className={`grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}
-          >
-            <CareerCard image={driver1} delay="200" isVisible={isVisible} />
-            <CareerCard image={driver2} delay="400" isVisible={isVisible} />
-            <CareerCard image={driver3} delay="600" isVisible={isVisible} />
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div
@@ -105,7 +65,7 @@ export default function Careers() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
